@@ -1,0 +1,346 @@
+:root {
+    --color-icon: rgb(214, 161, 180);
+}
+
+.content {
+    display: flex;
+    /* padding: 1rem; */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact {
+    padding: 0 1.5rem;
+}
+
+.contact h2 {
+    border-bottom: 0.7rem solid rgb(255, 255, 255);
+}
+
+.contact li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+
+.contact li i {
+    font-size: 1.7rem;
+}
+
+.content header {
+    padding: 1rem 0;
+    text-align: center;
+    background-color: var(--color-icon);
+    color: rgb(60, 66, 64);
+    position: relative;
+    /* z-index: -1; */
+}
+
+.content header button:hover {
+    background-color: #e9451c;
+    color: white;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+}
+
+img {
+    width: 27rem;
+    height: 27rem;
+    border-radius: 27rem;
+}
+
+.first-information {
+    width: 40vw;
+    background-color: rgb(60, 66, 64);
+    color: white;
+    /* z-index: -2; */
+}
+
+.first-information h2 {
+    font-size: 2.3rem;
+}
+
+.first-information h2 i {
+    color: var(--color-icon);
+}
+
+.first-information h3 {
+    font-size: 1.7rem;
+}
+
+.first-information p {
+    font-size: 1.2rem;
+}
+
+.second-information {
+    width: 60vw;
+    padding: 0 2.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.second-information h2 {
+    font-size: 2.3rem;
+    border-bottom: 0.7rem solid rgb(60, 66, 64);
+}
+
+.second-information h2 i {
+    color: var(--color-icon);
+}
+
+.second-information h3 {
+    font-size: 1.7rem;
+}
+
+.second-information li i {
+    font-size: 1.2rem;
+}
+
+.second-information p {
+    line-height: 2.3rem;
+    font-size: 1.7rem;
+}
+
+.list {
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.education {
+    padding: 0 1.5rem;
+}
+
+.education h2 {
+    border-bottom: 0.7rem solid rgb(255, 255, 255);
+}
+
+.education li {
+    list-style: none;
+    display: flex;
+}
+
+.education li > div {
+    box-sizing: border-box;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.education li > div h3 {
+    margin-top: 0;
+}
+
+.languages {
+    padding: 0 1.5rem;
+}
+
+.languages h2 {
+    border-bottom: 0.7rem solid rgb(255, 255, 255);
+}
+
+.languages li {
+    list-style: none;
+    display: flex;
+}
+
+.languages li > div {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    width: 70%;
+}
+
+.languages li  div  h3 {
+    margin-top: 0;
+    width: 50%;
+}
+
+.languages li  div p {
+    margin-top: 0;
+}
+
+.perfil p{
+    padding: 0 1rem;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+}
+
+.experience ul {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.experience li {
+    list-style: none;
+    display: flex;
+}
+
+.experience li > div {
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.experience li > div > h3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    width: 100%;
+}
+
+.experience p {
+    line-height: 2.3rem;
+}
+
+.logro {
+    font-weight: bold;
+}
+
+.skill li {
+    list-style: none;
+}
+
+.skill ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.skill i {
+    padding-right: 1rem;
+}
+
+.skill ul li {
+    font-size: 1.5rem;
+}
+
+.references li {
+    list-style: none;
+}
+
+.references ul {
+    display: flex;
+    gap: 38%;
+}
+
+.animation::before, .animation::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 1rem;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 5.3px);
+    height: calc(100% + 5.3px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+.animation {
+    border-radius: 1rem;
+    padding: 0.7rem 1.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.modal {
+    background-color: rgba(241, 145, 225, 0.342);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.modal div {
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    background-color: #dd47b8;
+    border-radius: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    position: relative;
+}
+
+.contact-closed {
+    display: none;
+}
+
+.modal div > button {
+    /* height: 10%; */
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal div > button:hover {
+    background-color: #e9451c;
+    color: white;
+}
+
+.modal form {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 0.5rem;
+}
+
+.modal form div input {
+    width: 100%;
+    height: 1.7rem;
+    border-radius: 1rem;
+}
+
+.modal form div textarea {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.modal label {
+    font-size: 1.7rem;
+}
+
+.modal form button {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.modal form button:hover {
+    background-color: #e9451c;
+    color: white;
+}
